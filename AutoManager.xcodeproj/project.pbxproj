@@ -7,16 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A4BA1208442877D8EC63CDC /* libPods-AutoManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60671A23FEE9E88B349BD5BB /* libPods-AutoManager.a */; };
+		AC0AC7891CCBF1B900BE3D2F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0AC7881CCBF1B900BE3D2F /* MessageUI.framework */; };
 		ACBCC0C31CBC03EE0047E8F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBCC0C21CBC03EE0047E8F6 /* main.m */; };
 		ACBCC0C61CBC03EE0047E8F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBCC0C51CBC03EE0047E8F6 /* AppDelegate.m */; };
 		ACBCC0CC1CBC03EE0047E8F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBCC0CA1CBC03EE0047E8F6 /* Main.storyboard */; };
 		ACBCC0CF1CBC03EE0047E8F6 /* AutoManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACBCC0CD1CBC03EE0047E8F6 /* AutoManager.xcdatamodeld */; };
 		ACBCC0D11CBC03EE0047E8F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBCC0D01CBC03EE0047E8F6 /* Assets.xcassets */; };
-		ACBCC0D41CBC03EE0047E8F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBCC0D21CBC03EE0047E8F6 /* LaunchScreen.storyboard */; };
 		ACBCC0DD1CBC04940047E8F6 /* AMCategoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBCC0DC1CBC04940047E8F6 /* AMCategoryVC.m */; };
+		ACDB5B881CC151CD00BA706C /* AMManualVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB5B871CC151CD00BA706C /* AMManualVC.m */; };
+		ACDB5B8D1CC1546300BA706C /* AMSettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB5B8C1CC1546300BA706C /* AMSettingsVC.m */; };
+		ACDB5B911CC15D3200BA706C /* AMSettingsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB5B901CC15D3200BA706C /* AMSettingsCell.m */; };
+		ACDB5B931CC15D4A00BA706C /* AMSettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACDB5B921CC15D4A00BA706C /* AMSettingsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60671A23FEE9E88B349BD5BB /* libPods-AutoManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutoManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0AC7881CCBF1B900BE3D2F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		ACBCC0BE1CBC03EE0047E8F6 /* AutoManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBCC0C21CBC03EE0047E8F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ACBCC0C41CBC03EE0047E8F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -24,10 +31,18 @@
 		ACBCC0CB1CBC03EE0047E8F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACBCC0CE1CBC03EE0047E8F6 /* AutoManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AutoManager.xcdatamodel; sourceTree = "<group>"; };
 		ACBCC0D01CBC03EE0047E8F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ACBCC0D31CBC03EE0047E8F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACBCC0D51CBC03EE0047E8F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACBCC0DB1CBC04940047E8F6 /* AMCategoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMCategoryVC.h; path = Classes/AMCategoriesVC/AMCategoryVC.h; sourceTree = "<group>"; };
 		ACBCC0DC1CBC04940047E8F6 /* AMCategoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMCategoryVC.m; path = Classes/AMCategoriesVC/AMCategoryVC.m; sourceTree = "<group>"; };
+		ACDB5B861CC151CD00BA706C /* AMManualVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMManualVC.h; path = Classes/AMManualVC/AMManualVC.h; sourceTree = "<group>"; };
+		ACDB5B871CC151CD00BA706C /* AMManualVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMManualVC.m; path = Classes/AMManualVC/AMManualVC.m; sourceTree = "<group>"; };
+		ACDB5B8B1CC1546300BA706C /* AMSettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMSettingsVC.h; path = Classes/AMSettingsVC/AMSettingsVC.h; sourceTree = "<group>"; };
+		ACDB5B8C1CC1546300BA706C /* AMSettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMSettingsVC.m; path = Classes/AMSettingsVC/AMSettingsVC.m; sourceTree = "<group>"; };
+		ACDB5B8F1CC15D3200BA706C /* AMSettingsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMSettingsCell.h; path = Classes/AMSettingsCell.h; sourceTree = "<group>"; };
+		ACDB5B901CC15D3200BA706C /* AMSettingsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMSettingsCell.m; path = Classes/AMSettingsCell.m; sourceTree = "<group>"; };
+		ACDB5B921CC15D4A00BA706C /* AMSettingsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMSettingsCell.xib; sourceTree = "<group>"; };
+		ADBA7BA1E7F72D0D0C3582C9 /* Pods-AutoManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoManager/Pods-AutoManager.release.xcconfig"; sourceTree = "<group>"; };
+		B81770707D7514BA49BA0784 /* Pods-AutoManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutoManager/Pods-AutoManager.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +50,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC0AC7891CCBF1B900BE3D2F /* MessageUI.framework in Frameworks */,
+				7A4BA1208442877D8EC63CDC /* libPods-AutoManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9008E64FF7F297F6EA3DCD97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B81770707D7514BA49BA0784 /* Pods-AutoManager.debug.xcconfig */,
+				ADBA7BA1E7F72D0D0C3582C9 /* Pods-AutoManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ACBCC0B51CBC03EE0047E8F6 = {
 			isa = PBXGroup;
 			children = (
 				ACBCC0C01CBC03EE0047E8F6 /* AutoManager */,
 				ACBCC0BF1CBC03EE0047E8F6 /* Products */,
+				9008E64FF7F297F6EA3DCD97 /* Pods */,
+				DA8F49D4AFF3249EBB1D7444 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,7 +93,6 @@
 				ACBCC0C51CBC03EE0047E8F6 /* AppDelegate.m */,
 				ACBCC0CA1CBC03EE0047E8F6 /* Main.storyboard */,
 				ACBCC0D01CBC03EE0047E8F6 /* Assets.xcassets */,
-				ACBCC0D21CBC03EE0047E8F6 /* LaunchScreen.storyboard */,
 				ACBCC0D51CBC03EE0047E8F6 /* Info.plist */,
 				ACBCC0CD1CBC03EE0047E8F6 /* AutoManager.xcdatamodeld */,
 				ACBCC0C11CBC03EE0047E8F6 /* Supporting Files */,
@@ -84,6 +111,9 @@
 		ACBCC0DE1CBC04980047E8F6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				ACDB5B8E1CC15D0100BA706C /* AMSettingsCell */,
+				ACDB5B8A1CC1543C00BA706C /* AMSettingsVC */,
+				ACDB5B891CC151D100BA706C /* AMManualVC */,
 				ACBCC0DF1CBC04A10047E8F6 /* AMCategoryVC */,
 			);
 			name = Classes;
@@ -98,6 +128,43 @@
 			name = AMCategoryVC;
 			sourceTree = "<group>";
 		};
+		ACDB5B891CC151D100BA706C /* AMManualVC */ = {
+			isa = PBXGroup;
+			children = (
+				ACDB5B861CC151CD00BA706C /* AMManualVC.h */,
+				ACDB5B871CC151CD00BA706C /* AMManualVC.m */,
+			);
+			name = AMManualVC;
+			sourceTree = "<group>";
+		};
+		ACDB5B8A1CC1543C00BA706C /* AMSettingsVC */ = {
+			isa = PBXGroup;
+			children = (
+				ACDB5B8B1CC1546300BA706C /* AMSettingsVC.h */,
+				ACDB5B8C1CC1546300BA706C /* AMSettingsVC.m */,
+			);
+			name = AMSettingsVC;
+			sourceTree = "<group>";
+		};
+		ACDB5B8E1CC15D0100BA706C /* AMSettingsCell */ = {
+			isa = PBXGroup;
+			children = (
+				ACDB5B8F1CC15D3200BA706C /* AMSettingsCell.h */,
+				ACDB5B901CC15D3200BA706C /* AMSettingsCell.m */,
+				ACDB5B921CC15D4A00BA706C /* AMSettingsCell.xib */,
+			);
+			name = AMSettingsCell;
+			sourceTree = "<group>";
+		};
+		DA8F49D4AFF3249EBB1D7444 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC0AC7881CCBF1B900BE3D2F /* MessageUI.framework */,
+				60671A23FEE9E88B349BD5BB /* libPods-AutoManager.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACBCC0D81CBC03EE0047E8F6 /* Build configuration list for PBXNativeTarget "AutoManager" */;
 			buildPhases = (
+				7687705D7D0A47EDF2564A72 /* Check Pods Manifest.lock */,
 				ACBCC0BA1CBC03EE0047E8F6 /* Sources */,
 				ACBCC0BB1CBC03EE0047E8F6 /* Frameworks */,
 				ACBCC0BC1CBC03EE0047E8F6 /* Resources */,
+				E91738E54CE40AD3D2D8E8B5 /* Embed Pods Frameworks */,
+				EED46A5F9CE2F698D964BC44 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,22 +225,73 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACBCC0D41CBC03EE0047E8F6 /* LaunchScreen.storyboard in Resources */,
 				ACBCC0D11CBC03EE0047E8F6 /* Assets.xcassets in Resources */,
+				ACDB5B931CC15D4A00BA706C /* AMSettingsCell.xib in Resources */,
 				ACBCC0CC1CBC03EE0047E8F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7687705D7D0A47EDF2564A72 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E91738E54CE40AD3D2D8E8B5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AutoManager/Pods-AutoManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EED46A5F9CE2F698D964BC44 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AutoManager/Pods-AutoManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ACBCC0BA1CBC03EE0047E8F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACDB5B881CC151CD00BA706C /* AMManualVC.m in Sources */,
+				ACDB5B8D1CC1546300BA706C /* AMSettingsVC.m in Sources */,
 				ACBCC0CF1CBC03EE0047E8F6 /* AutoManager.xcdatamodeld in Sources */,
 				ACBCC0C61CBC03EE0047E8F6 /* AppDelegate.m in Sources */,
 				ACBCC0DD1CBC04940047E8F6 /* AMCategoryVC.m in Sources */,
+				ACDB5B911CC15D3200BA706C /* AMSettingsCell.m in Sources */,
 				ACBCC0C31CBC03EE0047E8F6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,14 +305,6 @@
 				ACBCC0CB1CBC03EE0047E8F6 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		ACBCC0D21CBC03EE0047E8F6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ACBCC0D31CBC03EE0047E8F6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -281,6 +394,7 @@
 		};
 		ACBCC0D91CBC03EE0047E8F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B81770707D7514BA49BA0784 /* Pods-AutoManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ruslan Akhtyamov (D5ZA65V49D)";
@@ -289,11 +403,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = PI.AutoManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "81e72a3a-b8d7-4094-b33e-7885a633f493";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		ACBCC0DA1CBC03EE0047E8F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADBA7BA1E7F72D0D0C3582C9 /* Pods-AutoManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AutoManager/Info.plist;
@@ -301,6 +417,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = PI.AutoManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "81e72a3a-b8d7-4094-b33e-7885a633f493";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
