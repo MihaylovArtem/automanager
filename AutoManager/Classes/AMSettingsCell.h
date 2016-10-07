@@ -11,6 +11,7 @@
 @interface AMSettingsCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UITextField *name;
-@property (weak, nonatomic) IBOutlet UIButton *feedbackButton;
+@property (weak, nonatomic) IBOutlet UILabel *desc;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *descWidth;
 
 @end

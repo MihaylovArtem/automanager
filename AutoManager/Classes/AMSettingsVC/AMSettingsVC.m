@@ -9,6 +9,8 @@
 #import "AMSettingsVC.h"
 #import "AMSettingsCell.h"
 #import <MessageUI/MessageUI.h>
+#import <MagicalRecord/MagicalRecord.h>
+#import "AMUserSettings.h"
 
 static NSString * const AMSettingsCellIdentifier = @"AMSettingsCell";
 
@@ -17,6 +19,7 @@ static NSString * const AMSettingsCellIdentifier = @"AMSettingsCell";
 @property (weak, nonatomic) IBOutlet UITableView *settingsTable;
 @property (strong, nonatomic) NSArray * pickerData;
 @property (strong, nonatomic) NSArray * pickerDataModel;
+@property (strong, nonatomic) AMUserSettings * settings;
 
 @end
 
@@ -25,6 +28,9 @@ static NSString * const AMSettingsCellIdentifier = @"AMSettingsCell";
     NSDate *_dueDate;
 
 - (void)viewDidLoad {
+    
+   
+    
     self.pickerData = @[@"Huyndai"];
     self.pickerDataModel = @[@"Solaris"];
     [super viewDidLoad];
@@ -43,6 +49,14 @@ static NSString * const AMSettingsCellIdentifier = @"AMSettingsCell";
     [super didReceiveMemoryWarning];
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+//    [MagicalRecord saveWithBlockAndWait:^(NSManagedObjectContext * _Nonnull localContext) {
+//        self.settings = [AMUserSettings MR_findFirst];
+//    }];
+    self.settings = [AMUserSettings MR_findFirst];
+    [self.settingsTable reloadData];
+}
+
 /*
 #pragma mark - Navigation
 
@@ -55,53 +69,59 @@ static NSString * const AMSettingsCellIdentifier = @"AMSettingsCell";
 
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    загрузка ячейки таблицы из xib-файла
     AMSettingsCell * cell = [tableView dequeueReusableCellWithIdentifier:AMSettingsCellIdentifier];
-    
+//    дополнительная панель с кнопкой "Готово" закрытия клавиатуры
+    UIToolbar* keyboardDoneButtonView = [[UIToolbar alloc] init];
+    keyboardDoneButtonView.barStyle = UIBarStyleDefault;
+    keyboardDoneButtonView.translucent = YES;
+    keyboardDoneButtonView.tintColor = nil;
+    [keyboardDoneButtonView sizeToFit];
+    UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    UIBarButtonItem* doneButton = [[UIBarButtonItem alloc] initWithTitle:@"Готово"
+                                                                   style:UIBarButtonItemStylePlain target:self
+                                                                  action:@selector(pickerDoneClicked:)];
+    [keyboardDoneButtonView setItems:[NSArray arrayWithObjects:flexibleSpace,doneButton, nil]];
+//    настройка первой ячейки таблицы
     if (indexPath.section == 0 && indexPath.row == 0) {
-        cell.name.placeholder =  @"Дата выдачи водительского удостоверения";
         cell.name.tag = 0;
+        cell.desc.text = @"Дата выдачи:";
+        if (self.settings) {
+            NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
+            formatter.dateStyle = NSDateFormatterMediumStyle;
+            cell.name.text = [formatter stringFromDate:self.settings.docDate];
+        }
         cell.name.delegate = self;
         UIDatePicker * datePicker = [[UIDatePicker alloc] initWithFrame:CGRectZero];
         datePicker.datePickerMode = UIDatePickerModeDate;
         [datePicker addTarget:self action:@selector(dateChanged:) forControlEvents:UIControlEventValueChanged];
         cell.name.inputView = datePicker;
-        
-        UIToolbar* keyboardDoneButtonView = [[UIToolbar alloc] init];
-        keyboardDoneButtonView.barStyle = UIBarStyleDefault;
-        keyboardDoneButtonView.translucent = YES;
-        keyboardDoneButtonView.tintColor = nil;
-        [keyboardDoneButtonView sizeToFit];
-        UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-        UIBarButtonItem* doneButton = [[UIBarButtonItem alloc] initWithTitle:@"Готово"
-                                                                        style:UIBarButtonItemStylePlain target:self
-                                                                       action:@selector(pickerDoneClicked:)];
-        [keyboardDoneButtonView setItems:[NSArray arrayWithObjects:flexibleSpace,doneButton, nil]];
         cell.name.inputAccessoryView = keyboardDoneButtonView;
     }
+//    настройка второй ячейки таблицы
     if (indexPath.section == 1 && indexPath.row == 0) {
-        cell.name.placeholder =  @"Марка";
         cell.name.tag = 1;
+        cell.desc.text = @"Марка:";
+        if (self.settings) {
+            cell.name.text = self.settings.mark;
+        }
         cell.name.delegate = self;
         UIPickerView * picker = [[UIPickerView alloc] initWithFrame:CGRectZero];
         picker.delegate = self;
         picker.dataSource = self;
         picker.tag = 0;
         cell.name.inputView = picker;
-        UIToolbar* keyboardDoneButtonView = [[UIToolbar alloc] init];
-        keyboardDoneButtonView.barStyle = UIBarStyleDefault;
-        keyboardDoneButtonView.translucent = YES;
-        keyboardDoneButtonView.tintColor = nil;
-        [keyboardDoneButtonView sizeToFit];
-        UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-        UIBarButtonItem* doneButton = [[UIBarButtonItem alloc] initWithTitle:@"Готово"
-                                                                       style:UIBarButtonItemStylePlain target:self
-                                                                      action:@selector(pickerDoneClicked:)];
-        [keyboardDoneButtonView setItems:[NSArray arrayWithObjects:flexibleSpace,doneButton, nil]];
         cell.name.inputAccessoryView = keyboardDoneButtonView;
     }
     if (indexPath.section == 1 && indexPath.row == 1) {
-        cell.name.placeholder =  @"Модель";
+        //cell.name.placeholder =  @"Модель";
         cell.name.tag = 2;
+        cell.desc.text = @"Модель:";
+        //cell.backgroundColor =[UIColor colorWithRed:230.0/255.0 green:230.0/255.0 blue:230.0/255.0 alpha:1];
+        //cell.desc.backgroundColor = [UIColor colorWithRed:230.0/255.0 green:230.0/255.0 blue:230.0/255.0 alpha:1];
+        if (self.settings) {
+            cell.name.text = self.settings.model;
+        }
         cell.name.delegate = self;
         UIPickerView * picker = [[UIPickerView alloc] initWithFrame:CGRectZero];
         picker.delegate = self;
@@ -121,8 +141,16 @@ static NSString * const AMSettingsCellIdentifier = @"AMSettingsCell";
         cell.name.inputAccessoryView = keyboardDoneButtonView;
     }
     if (indexPath.section == 1 && indexPath.row == 2) {
-        cell.name.placeholder =  @"Дата покупки";
+        //cell.name.placeholder =  @"Дата покупки";
         cell.name.tag = 3;
+        //cell.backgroundColor =[UIColor colorWithRed:230.0/255.0 green:230.0/255.0 blue:230.0/255.0 alpha:1];
+        cell.desc.text = @"Дата покупки:";
+        //cell.desc.backgroundColor = [UIColor colorWithRed:230.0/255.0 green:230.0/255.0 blue:230.0/255.0 alpha:1];
+        if (self.settings) {
+            NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
+            formatter.dateStyle = NSDateFormatterMediumStyle;
+            cell.name.text = [formatter stringFromDate:self.settings.carDate];
+        }
         cell.name.delegate = self;
         UIDatePicker * datePicker = [[UIDatePicker alloc] initWithFrame:CGRectZero];
         datePicker.datePickerMode = UIDatePickerModeDate;
@@ -145,17 +173,6 @@ static NSString * const AMSettingsCellIdentifier = @"AMSettingsCell";
         cell.name.text =  @"";
         cell.name.textAlignment = NSTextAlignmentCenter;
         [cell.name setEnabled:NO];
-        
-        //UIButton * button = [[UIButton alloc] initWithFrame:cell.frame];
-//        button.titleLabel.text = @"Обратная связь";
-//        [button.titleLabel setFrame:button.frame];
-//        button.titleLabel.textAlignment = NSTextAlignmentCenter;
-//        button.titleLabel.font = [UIFont systemFontOfSize:16];
-//        button.titleLabel.textColor = [UIColor blueColor];
-//        [button.titleLabel setHidden:NO];
-        cell.feedbackButton.hidden = NO;
-        //[button setTitle:@"Обратная связь" forState:UIControlStateNormal];
-        //[cell addSubview:button];
     }
     return cell;
 }
@@ -165,19 +182,9 @@ static NSString * const AMSettingsCellIdentifier = @"AMSettingsCell";
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 8;
+    return 11;
 }
 
-
-//-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    if (indexPath.section == 0 && indexPath.row == 0) {
-//        UIDatePicker * datePicker = [[UIDatePicker alloc] initWithFrame:CGRectZero];
-//        datePicker.datePickerMode = UIDatePickerModeDate;
-//        AMSettingsCell * cell = [tableView cellForRowAtIndexPath:indexPath];
-//        cell.name.inputView = datePicker;
-//        cell.name.text = [NSString stringWithFormat:@"%@", datePicker.date];
-//    }
-//}
 -(void)dateChanged:(UIDatePicker *)datePicker
 {
     _dueDate = datePicker.date;
@@ -211,10 +218,10 @@ static NSString * const AMSettingsCellIdentifier = @"AMSettingsCell";
     if (section == 1) {
         return 3;
     }
-    if (section == 2 || section == 4 || section == 5 || section == 6 || section == 7) {
+    if (section >= 2 && section <= 10) {
         return 0;
     }
-    return 1;
+    return 0;
 }
 
 -(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -316,6 +323,44 @@ static NSString * const AMSettingsCellIdentifier = @"AMSettingsCell";
     //handle any error
     [controller dismissViewControllerAnimated:YES completion:nil];
 }
+
+- (IBAction)saveTapped:(id)sender {
+    if ([[(AMSettingsCell*)[self.settingsTable cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]] name].text isEqual:@""] || [[(AMSettingsCell*)[self.settingsTable cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:1]] name].text isEqual:@""] || [[(AMSettingsCell*)[self.settingsTable cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:1]] name].text isEqual:@""] || [[(AMSettingsCell*)[self.settingsTable cellForRowAtIndexPath:[NSIndexPath indexPathForRow:2 inSection:1]] name].text isEqual:@""]) {
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Ошибка"
+                                                                       message:@"Чтобы сохранить введенные данные, необходимо заполнить все поля"
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+        
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
+    else {
+        NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
+        formatter.dateStyle = NSDateFormatterMediumStyle;
+        self.settings = [AMUserSettings initWithDocDate:[formatter dateFromString:[(AMSettingsCell*)[self.settingsTable cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]] name].text] mark:[(AMSettingsCell*)[self.settingsTable cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:1]] name].text Model:[(AMSettingsCell*)[self.settingsTable cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:1]] name].text andCarDate:[formatter dateFromString:[(AMSettingsCell*)[self.settingsTable cellForRowAtIndexPath:[NSIndexPath indexPathForRow:2 inSection:1]] name].text]];
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Поздравляем!"
+                                                                       message:@"Введенные данные сохранены успешно!"
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+        
+        [alert addAction:defaultAction];
+        UILocalNotification *notification = [[UILocalNotification alloc]init];
+        NSDate *dueDate = [NSDate dateWithTimeInterval:10*NSCalendarUnitYear sinceDate:[formatter dateFromString:[(AMSettingsCell*)[self.settingsTable cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]] name].text]];
+        [notification setAlertBody:[NSString stringWithFormat:@"Не забудьте поменять свое водительское удостоверение до %@ !", [formatter stringFromDate:dueDate]]];
+        [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:10]];
+        [notification setTimeZone:[NSTimeZone  defaultTimeZone]];
+        notification.soundName = UILocalNotificationDefaultSoundName;
+        [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+        [self presentViewController:alert animated:YES completion:nil];
+        notification.applicationIconBadgeNumber++;
+        
+    }
+}
+
 
 
 @end

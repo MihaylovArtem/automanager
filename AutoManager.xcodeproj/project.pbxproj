@@ -8,22 +8,111 @@
 
 /* Begin PBXBuildFile section */
 		7A4BA1208442877D8EC63CDC /* libPods-AutoManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60671A23FEE9E88B349BD5BB /* libPods-AutoManager.a */; };
+		AC0A51251CCCED9B00582C02 /* AMManual+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0A51221CCCED9B00582C02 /* AMManual+CoreDataProperties.m */; };
+		AC0A51261CCCED9B00582C02 /* AMManual.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0A51241CCCED9B00582C02 /* AMManual.m */; };
 		AC0AC7891CCBF1B900BE3D2F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0AC7881CCBF1B900BE3D2F /* MessageUI.framework */; };
+		AC20CB2C1CD39BD500416801 /* AMMaterialLegendView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC20CB2B1CD39BD500416801 /* AMMaterialLegendView.xib */; };
+		AC733EE21CCD4FF7009465FC /* AMManualView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC733EE11CCD4FF7009465FC /* AMManualView.m */; };
+		AC733EE41CCD5008009465FC /* AMManualView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC733EE31CCD5008009465FC /* AMManualView.xib */; };
+		AC8885A61CCFB84300CDDB0D /* AMTOInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8885A51CCFB84300CDDB0D /* AMTOInputView.m */; };
+		AC8885A81CCFB84E00CDDB0D /* AMTOInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC8885A71CCFB84E00CDDB0D /* AMTOInputView.xib */; };
+		AC8885AE1CCFBA8400CDDB0D /* AMTOInput+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8885AB1CCFBA8400CDDB0D /* AMTOInput+CoreDataProperties.m */; };
+		AC8885AF1CCFBA8400CDDB0D /* AMTOInput.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8885AD1CCFBA8400CDDB0D /* AMTOInput.m */; };
+		AC8885B51CCFC7D300CDDB0D /* AMWashInput+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8885B21CCFC7D300CDDB0D /* AMWashInput+CoreDataProperties.m */; };
+		AC8885B61CCFC7D300CDDB0D /* AMWashInput.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8885B41CCFC7D300CDDB0D /* AMWashInput.m */; };
+		AC8885BA1CCFC89F00CDDB0D /* AMWashInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8885B91CCFC89F00CDDB0D /* AMWashInputView.m */; };
+		AC8885BC1CCFC8AD00CDDB0D /* AMWashInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC8885BB1CCFC8AD00CDDB0D /* AMWashInputView.xib */; };
+		AC8885C31CCFE26800CDDB0D /* AMExtreme+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8885C01CCFE26800CDDB0D /* AMExtreme+CoreDataProperties.m */; };
+		AC8885C41CCFE26800CDDB0D /* AMExtreme.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8885C21CCFE26800CDDB0D /* AMExtreme.m */; };
+		AC8885CB1CCFEE6600CDDB0D /* ManualJson.json in Resources */ = {isa = PBXBuildFile; fileRef = AC8885CA1CCFEE6600CDDB0D /* ManualJson.json */; };
+		AC8885CD1CCFEE7200CDDB0D /* ExtremeJson.json in Resources */ = {isa = PBXBuildFile; fileRef = AC8885CC1CCFEE7200CDDB0D /* ExtremeJson.json */; };
+		AC8885D11CCFEF5800CDDB0D /* AMExtremeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8885D01CCFEF5800CDDB0D /* AMExtremeVC.m */; };
+		AC9F13C11CCE7B7A008B696A /* AMInputVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9F13C01CCE7B7A008B696A /* AMInputVC.m */; };
+		AC9F13C51CCE7D44008B696A /* AMFuelInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9F13C41CCE7D44008B696A /* AMFuelInputView.m */; };
+		AC9F13C71CCE7D51008B696A /* AMFuelInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC9F13C61CCE7D51008B696A /* AMFuelInputView.xib */; };
+		AC9F13D31CCEA18C008B696A /* AMFuelInput+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9F13D01CCEA18C008B696A /* AMFuelInput+CoreDataProperties.m */; };
+		AC9F13D41CCEA18C008B696A /* AMFuelInput.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9F13D21CCEA18C008B696A /* AMFuelInput.m */; };
+		AC9F13DA1CCEA714008B696A /* AMUserSettings+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9F13D71CCEA714008B696A /* AMUserSettings+CoreDataProperties.m */; };
+		AC9F13DB1CCEA714008B696A /* AMUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9F13D91CCEA714008B696A /* AMUserSettings.m */; };
+		ACA7A7291CD27A180084C3A5 /* AMFuelStatisticsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA7A7281CD27A180084C3A5 /* AMFuelStatisticsView.xib */; };
+		ACA7A72C1CD27A360084C3A5 /* AMFuelStatisticsView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA7A72B1CD27A360084C3A5 /* AMFuelStatisticsView.m */; };
+		ACA7A7301CD29A700084C3A5 /* AMKmStatisticsView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA7A72F1CD29A700084C3A5 /* AMKmStatisticsView.m */; };
+		ACA7A7321CD29A7D0084C3A5 /* AMKmStatisticsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA7A7311CD29A7D0084C3A5 /* AMKmStatisticsView.xib */; };
 		ACBCC0C31CBC03EE0047E8F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBCC0C21CBC03EE0047E8F6 /* main.m */; };
 		ACBCC0C61CBC03EE0047E8F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBCC0C51CBC03EE0047E8F6 /* AppDelegate.m */; };
 		ACBCC0CC1CBC03EE0047E8F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBCC0CA1CBC03EE0047E8F6 /* Main.storyboard */; };
 		ACBCC0CF1CBC03EE0047E8F6 /* AutoManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACBCC0CD1CBC03EE0047E8F6 /* AutoManager.xcdatamodeld */; };
 		ACBCC0D11CBC03EE0047E8F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBCC0D01CBC03EE0047E8F6 /* Assets.xcassets */; };
 		ACBCC0DD1CBC04940047E8F6 /* AMCategoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBCC0DC1CBC04940047E8F6 /* AMCategoryVC.m */; };
+		ACD591821CD1213B001A2270 /* AMStatisticsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD591811CD1213B001A2270 /* AMStatisticsVC.m */; };
+		ACD591901CD12CAA001A2270 /* MCNewCustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD591861CD12CAA001A2270 /* MCNewCustomLayer.m */; };
+		ACD591911CD12CAA001A2270 /* MCNewCustomLayeredView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD591881CD12CAA001A2270 /* MCNewCustomLayeredView.m */; };
+		ACD591921CD12CAA001A2270 /* MCPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD5918B1CD12CAA001A2270 /* MCPieChartView.m */; };
+		ACD591931CD12CAA001A2270 /* MCSliceLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD5918D1CD12CAA001A2270 /* MCSliceLayer.m */; };
+		ACD591941CD12CAA001A2270 /* MCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD5918F1CD12CAA001A2270 /* MCUtil.m */; };
+		ACD591961CD13A46001A2270 /* TotalCostLegendView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACD591951CD13A46001A2270 /* TotalCostLegendView.xib */; };
 		ACDB5B881CC151CD00BA706C /* AMManualVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB5B871CC151CD00BA706C /* AMManualVC.m */; };
 		ACDB5B8D1CC1546300BA706C /* AMSettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB5B8C1CC1546300BA706C /* AMSettingsVC.m */; };
 		ACDB5B911CC15D3200BA706C /* AMSettingsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB5B901CC15D3200BA706C /* AMSettingsCell.m */; };
 		ACDB5B931CC15D4A00BA706C /* AMSettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACDB5B921CC15D4A00BA706C /* AMSettingsCell.xib */; };
+		ACDECB3B1CCF77A600941B57 /* AMMaterialsInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDECB3A1CCF77A600941B57 /* AMMaterialsInputView.m */; };
+		ACDECB3D1CCF77AE00941B57 /* AMMaterialInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACDECB3C1CCF77AE00941B57 /* AMMaterialInputView.xib */; };
+		ACDECB431CCF7DD100941B57 /* AMMaterialInput+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDECB401CCF7DD100941B57 /* AMMaterialInput+CoreDataProperties.m */; };
+		ACDECB441CCF7DD100941B57 /* AMMaterialInput.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDECB421CCF7DD100941B57 /* AMMaterialInput.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		60671A23FEE9E88B349BD5BB /* libPods-AutoManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutoManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0A51211CCCED9B00582C02 /* AMManual+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AMManual+CoreDataProperties.h"; sourceTree = "<group>"; };
+		AC0A51221CCCED9B00582C02 /* AMManual+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AMManual+CoreDataProperties.m"; sourceTree = "<group>"; };
+		AC0A51231CCCED9B00582C02 /* AMManual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMManual.h; sourceTree = "<group>"; };
+		AC0A51241CCCED9B00582C02 /* AMManual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMManual.m; sourceTree = "<group>"; };
 		AC0AC7881CCBF1B900BE3D2F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		AC20CB2B1CD39BD500416801 /* AMMaterialLegendView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMMaterialLegendView.xib; sourceTree = "<group>"; };
+		AC733EE01CCD4FF7009465FC /* AMManualView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMManualView.h; sourceTree = "<group>"; };
+		AC733EE11CCD4FF7009465FC /* AMManualView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMManualView.m; sourceTree = "<group>"; };
+		AC733EE31CCD5008009465FC /* AMManualView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMManualView.xib; sourceTree = "<group>"; };
+		AC8885A41CCFB84300CDDB0D /* AMTOInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTOInputView.h; sourceTree = "<group>"; };
+		AC8885A51CCFB84300CDDB0D /* AMTOInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTOInputView.m; sourceTree = "<group>"; };
+		AC8885A71CCFB84E00CDDB0D /* AMTOInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMTOInputView.xib; sourceTree = "<group>"; };
+		AC8885AA1CCFBA8400CDDB0D /* AMTOInput+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AMTOInput+CoreDataProperties.h"; sourceTree = "<group>"; };
+		AC8885AB1CCFBA8400CDDB0D /* AMTOInput+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AMTOInput+CoreDataProperties.m"; sourceTree = "<group>"; };
+		AC8885AC1CCFBA8400CDDB0D /* AMTOInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTOInput.h; sourceTree = "<group>"; };
+		AC8885AD1CCFBA8400CDDB0D /* AMTOInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTOInput.m; sourceTree = "<group>"; };
+		AC8885B11CCFC7D300CDDB0D /* AMWashInput+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AMWashInput+CoreDataProperties.h"; sourceTree = "<group>"; };
+		AC8885B21CCFC7D300CDDB0D /* AMWashInput+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AMWashInput+CoreDataProperties.m"; sourceTree = "<group>"; };
+		AC8885B31CCFC7D300CDDB0D /* AMWashInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMWashInput.h; sourceTree = "<group>"; };
+		AC8885B41CCFC7D300CDDB0D /* AMWashInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMWashInput.m; sourceTree = "<group>"; };
+		AC8885B81CCFC89F00CDDB0D /* AMWashInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMWashInputView.h; sourceTree = "<group>"; };
+		AC8885B91CCFC89F00CDDB0D /* AMWashInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMWashInputView.m; sourceTree = "<group>"; };
+		AC8885BB1CCFC8AD00CDDB0D /* AMWashInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMWashInputView.xib; sourceTree = "<group>"; };
+		AC8885BF1CCFE26800CDDB0D /* AMExtreme+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AMExtreme+CoreDataProperties.h"; sourceTree = "<group>"; };
+		AC8885C01CCFE26800CDDB0D /* AMExtreme+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AMExtreme+CoreDataProperties.m"; sourceTree = "<group>"; };
+		AC8885C11CCFE26800CDDB0D /* AMExtreme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMExtreme.h; sourceTree = "<group>"; };
+		AC8885C21CCFE26800CDDB0D /* AMExtreme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMExtreme.m; sourceTree = "<group>"; };
+		AC8885CA1CCFEE6600CDDB0D /* ManualJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ManualJson.json; sourceTree = "<group>"; };
+		AC8885CC1CCFEE7200CDDB0D /* ExtremeJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ExtremeJson.json; sourceTree = "<group>"; };
+		AC8885CF1CCFEF5800CDDB0D /* AMExtremeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMExtremeVC.h; sourceTree = "<group>"; };
+		AC8885D01CCFEF5800CDDB0D /* AMExtremeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMExtremeVC.m; sourceTree = "<group>"; };
+		AC9F13BF1CCE7B7A008B696A /* AMInputVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMInputVC.h; sourceTree = "<group>"; };
+		AC9F13C01CCE7B7A008B696A /* AMInputVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMInputVC.m; sourceTree = "<group>"; };
+		AC9F13C31CCE7D44008B696A /* AMFuelInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMFuelInputView.h; sourceTree = "<group>"; };
+		AC9F13C41CCE7D44008B696A /* AMFuelInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMFuelInputView.m; sourceTree = "<group>"; };
+		AC9F13C61CCE7D51008B696A /* AMFuelInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMFuelInputView.xib; sourceTree = "<group>"; };
+		AC9F13CF1CCEA18C008B696A /* AMFuelInput+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AMFuelInput+CoreDataProperties.h"; sourceTree = "<group>"; };
+		AC9F13D01CCEA18C008B696A /* AMFuelInput+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AMFuelInput+CoreDataProperties.m"; sourceTree = "<group>"; };
+		AC9F13D11CCEA18C008B696A /* AMFuelInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMFuelInput.h; sourceTree = "<group>"; };
+		AC9F13D21CCEA18C008B696A /* AMFuelInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMFuelInput.m; sourceTree = "<group>"; };
+		AC9F13D61CCEA714008B696A /* AMUserSettings+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AMUserSettings+CoreDataProperties.h"; sourceTree = "<group>"; };
+		AC9F13D71CCEA714008B696A /* AMUserSettings+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AMUserSettings+CoreDataProperties.m"; sourceTree = "<group>"; };
+		AC9F13D81CCEA714008B696A /* AMUserSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMUserSettings.h; sourceTree = "<group>"; };
+		AC9F13D91CCEA714008B696A /* AMUserSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMUserSettings.m; sourceTree = "<group>"; };
+		ACA7A7281CD27A180084C3A5 /* AMFuelStatisticsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMFuelStatisticsView.xib; sourceTree = "<group>"; };
+		ACA7A72A1CD27A360084C3A5 /* AMFuelStatisticsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMFuelStatisticsView.h; sourceTree = "<group>"; };
+		ACA7A72B1CD27A360084C3A5 /* AMFuelStatisticsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMFuelStatisticsView.m; sourceTree = "<group>"; };
+		ACA7A72E1CD29A700084C3A5 /* AMKmStatisticsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMKmStatisticsView.h; sourceTree = "<group>"; };
+		ACA7A72F1CD29A700084C3A5 /* AMKmStatisticsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMKmStatisticsView.m; sourceTree = "<group>"; };
+		ACA7A7311CD29A7D0084C3A5 /* AMKmStatisticsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMKmStatisticsView.xib; sourceTree = "<group>"; };
 		ACBCC0BE1CBC03EE0047E8F6 /* AutoManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBCC0C21CBC03EE0047E8F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ACBCC0C41CBC03EE0047E8F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -34,6 +123,21 @@
 		ACBCC0D51CBC03EE0047E8F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACBCC0DB1CBC04940047E8F6 /* AMCategoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMCategoryVC.h; path = Classes/AMCategoriesVC/AMCategoryVC.h; sourceTree = "<group>"; };
 		ACBCC0DC1CBC04940047E8F6 /* AMCategoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMCategoryVC.m; path = Classes/AMCategoriesVC/AMCategoryVC.m; sourceTree = "<group>"; };
+		ACD591801CD1213B001A2270 /* AMStatisticsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMStatisticsVC.h; sourceTree = "<group>"; };
+		ACD591811CD1213B001A2270 /* AMStatisticsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMStatisticsVC.m; sourceTree = "<group>"; };
+		ACD591841CD12CAA001A2270 /* MCCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCCore.h; sourceTree = "<group>"; };
+		ACD591851CD12CAA001A2270 /* MCNewCustomLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCNewCustomLayer.h; sourceTree = "<group>"; };
+		ACD591861CD12CAA001A2270 /* MCNewCustomLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCNewCustomLayer.m; sourceTree = "<group>"; };
+		ACD591871CD12CAA001A2270 /* MCNewCustomLayeredView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCNewCustomLayeredView.h; sourceTree = "<group>"; };
+		ACD591881CD12CAA001A2270 /* MCNewCustomLayeredView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCNewCustomLayeredView.m; sourceTree = "<group>"; };
+		ACD591891CD12CAA001A2270 /* MCNewCustomLayeredView+MCCustomLayeredViewSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MCNewCustomLayeredView+MCCustomLayeredViewSubclass.h"; sourceTree = "<group>"; };
+		ACD5918A1CD12CAA001A2270 /* MCPieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPieChartView.h; sourceTree = "<group>"; };
+		ACD5918B1CD12CAA001A2270 /* MCPieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPieChartView.m; sourceTree = "<group>"; };
+		ACD5918C1CD12CAA001A2270 /* MCSliceLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSliceLayer.h; sourceTree = "<group>"; };
+		ACD5918D1CD12CAA001A2270 /* MCSliceLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSliceLayer.m; sourceTree = "<group>"; };
+		ACD5918E1CD12CAA001A2270 /* MCUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCUtil.h; sourceTree = "<group>"; };
+		ACD5918F1CD12CAA001A2270 /* MCUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCUtil.m; sourceTree = "<group>"; };
+		ACD591951CD13A46001A2270 /* TotalCostLegendView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TotalCostLegendView.xib; sourceTree = "<group>"; };
 		ACDB5B861CC151CD00BA706C /* AMManualVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMManualVC.h; path = Classes/AMManualVC/AMManualVC.h; sourceTree = "<group>"; };
 		ACDB5B871CC151CD00BA706C /* AMManualVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMManualVC.m; path = Classes/AMManualVC/AMManualVC.m; sourceTree = "<group>"; };
 		ACDB5B8B1CC1546300BA706C /* AMSettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMSettingsVC.h; path = Classes/AMSettingsVC/AMSettingsVC.h; sourceTree = "<group>"; };
@@ -41,6 +145,13 @@
 		ACDB5B8F1CC15D3200BA706C /* AMSettingsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMSettingsCell.h; path = Classes/AMSettingsCell.h; sourceTree = "<group>"; };
 		ACDB5B901CC15D3200BA706C /* AMSettingsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMSettingsCell.m; path = Classes/AMSettingsCell.m; sourceTree = "<group>"; };
 		ACDB5B921CC15D4A00BA706C /* AMSettingsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMSettingsCell.xib; sourceTree = "<group>"; };
+		ACDECB391CCF77A600941B57 /* AMMaterialsInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMMaterialsInputView.h; sourceTree = "<group>"; };
+		ACDECB3A1CCF77A600941B57 /* AMMaterialsInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMMaterialsInputView.m; sourceTree = "<group>"; };
+		ACDECB3C1CCF77AE00941B57 /* AMMaterialInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMMaterialInputView.xib; sourceTree = "<group>"; };
+		ACDECB3F1CCF7DD100941B57 /* AMMaterialInput+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AMMaterialInput+CoreDataProperties.h"; sourceTree = "<group>"; };
+		ACDECB401CCF7DD100941B57 /* AMMaterialInput+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AMMaterialInput+CoreDataProperties.m"; sourceTree = "<group>"; };
+		ACDECB411CCF7DD100941B57 /* AMMaterialInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMMaterialInput.h; sourceTree = "<group>"; };
+		ACDECB421CCF7DD100941B57 /* AMMaterialInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMMaterialInput.m; sourceTree = "<group>"; };
 		ADBA7BA1E7F72D0D0C3582C9 /* Pods-AutoManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoManager/Pods-AutoManager.release.xcconfig"; sourceTree = "<group>"; };
 		B81770707D7514BA49BA0784 /* Pods-AutoManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutoManager/Pods-AutoManager.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +176,149 @@
 				ADBA7BA1E7F72D0D0C3582C9 /* Pods-AutoManager.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		AC0A51271CCCEDA000582C02 /* AMManual */ = {
+			isa = PBXGroup;
+			children = (
+				AC0A51211CCCED9B00582C02 /* AMManual+CoreDataProperties.h */,
+				AC0A51221CCCED9B00582C02 /* AMManual+CoreDataProperties.m */,
+				AC0A51231CCCED9B00582C02 /* AMManual.h */,
+				AC0A51241CCCED9B00582C02 /* AMManual.m */,
+			);
+			name = AMManual;
+			sourceTree = "<group>";
+		};
+		AC20CB2A1CD39B7100416801 /* MaterialLegendView */ = {
+			isa = PBXGroup;
+			children = (
+				AC20CB2B1CD39BD500416801 /* AMMaterialLegendView.xib */,
+			);
+			name = MaterialLegendView;
+			sourceTree = "<group>";
+		};
+		AC8885A31CCFB82400CDDB0D /* AMTOInputView */ = {
+			isa = PBXGroup;
+			children = (
+				AC8885A41CCFB84300CDDB0D /* AMTOInputView.h */,
+				AC8885A51CCFB84300CDDB0D /* AMTOInputView.m */,
+				AC8885A71CCFB84E00CDDB0D /* AMTOInputView.xib */,
+			);
+			name = AMTOInputView;
+			sourceTree = "<group>";
+		};
+		AC8885A91CCFBA5C00CDDB0D /* AMTOInput */ = {
+			isa = PBXGroup;
+			children = (
+				AC8885AA1CCFBA8400CDDB0D /* AMTOInput+CoreDataProperties.h */,
+				AC8885AB1CCFBA8400CDDB0D /* AMTOInput+CoreDataProperties.m */,
+				AC8885AC1CCFBA8400CDDB0D /* AMTOInput.h */,
+				AC8885AD1CCFBA8400CDDB0D /* AMTOInput.m */,
+			);
+			name = AMTOInput;
+			sourceTree = "<group>";
+		};
+		AC8885B01CCFC76B00CDDB0D /* AMWashInput */ = {
+			isa = PBXGroup;
+			children = (
+				AC8885B11CCFC7D300CDDB0D /* AMWashInput+CoreDataProperties.h */,
+				AC8885B21CCFC7D300CDDB0D /* AMWashInput+CoreDataProperties.m */,
+				AC8885B31CCFC7D300CDDB0D /* AMWashInput.h */,
+				AC8885B41CCFC7D300CDDB0D /* AMWashInput.m */,
+			);
+			name = AMWashInput;
+			sourceTree = "<group>";
+		};
+		AC8885B71CCFC88C00CDDB0D /* AMWashInputView */ = {
+			isa = PBXGroup;
+			children = (
+				AC8885B81CCFC89F00CDDB0D /* AMWashInputView.h */,
+				AC8885B91CCFC89F00CDDB0D /* AMWashInputView.m */,
+				AC8885BB1CCFC8AD00CDDB0D /* AMWashInputView.xib */,
+			);
+			name = AMWashInputView;
+			sourceTree = "<group>";
+		};
+		AC8885BE1CCFE25600CDDB0D /* AMExtreme */ = {
+			isa = PBXGroup;
+			children = (
+				AC8885BF1CCFE26800CDDB0D /* AMExtreme+CoreDataProperties.h */,
+				AC8885C01CCFE26800CDDB0D /* AMExtreme+CoreDataProperties.m */,
+				AC8885C11CCFE26800CDDB0D /* AMExtreme.h */,
+				AC8885C21CCFE26800CDDB0D /* AMExtreme.m */,
+				AC8885CC1CCFEE7200CDDB0D /* ExtremeJson.json */,
+			);
+			name = AMExtreme;
+			sourceTree = "<group>";
+		};
+		AC8885CE1CCFEF2F00CDDB0D /* AMExtremeVC */ = {
+			isa = PBXGroup;
+			children = (
+				AC8885CF1CCFEF5800CDDB0D /* AMExtremeVC.h */,
+				AC8885D01CCFEF5800CDDB0D /* AMExtremeVC.m */,
+			);
+			name = AMExtremeVC;
+			sourceTree = "<group>";
+		};
+		AC9F13BE1CCE7B5E008B696A /* AMInputVC */ = {
+			isa = PBXGroup;
+			children = (
+				AC9F13BF1CCE7B7A008B696A /* AMInputVC.h */,
+				AC9F13C01CCE7B7A008B696A /* AMInputVC.m */,
+			);
+			name = AMInputVC;
+			sourceTree = "<group>";
+		};
+		AC9F13C21CCE7D2F008B696A /* AMFuelInputView */ = {
+			isa = PBXGroup;
+			children = (
+				AC9F13C31CCE7D44008B696A /* AMFuelInputView.h */,
+				AC9F13C41CCE7D44008B696A /* AMFuelInputView.m */,
+				AC9F13C61CCE7D51008B696A /* AMFuelInputView.xib */,
+			);
+			name = AMFuelInputView;
+			sourceTree = "<group>";
+		};
+		AC9F13C81CCEA15D008B696A /* AMFuelInputModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC9F13CF1CCEA18C008B696A /* AMFuelInput+CoreDataProperties.h */,
+				AC9F13D01CCEA18C008B696A /* AMFuelInput+CoreDataProperties.m */,
+				AC9F13D11CCEA18C008B696A /* AMFuelInput.h */,
+				AC9F13D21CCEA18C008B696A /* AMFuelInput.m */,
+			);
+			name = AMFuelInputModel;
+			sourceTree = "<group>";
+		};
+		AC9F13D51CCEA703008B696A /* AMUserSettings */ = {
+			isa = PBXGroup;
+			children = (
+				AC9F13D61CCEA714008B696A /* AMUserSettings+CoreDataProperties.h */,
+				AC9F13D71CCEA714008B696A /* AMUserSettings+CoreDataProperties.m */,
+				AC9F13D81CCEA714008B696A /* AMUserSettings.h */,
+				AC9F13D91CCEA714008B696A /* AMUserSettings.m */,
+			);
+			name = AMUserSettings;
+			sourceTree = "<group>";
+		};
+		ACA7A7271CD27A010084C3A5 /* AMFuelStatisticsView */ = {
+			isa = PBXGroup;
+			children = (
+				ACA7A7281CD27A180084C3A5 /* AMFuelStatisticsView.xib */,
+				ACA7A72A1CD27A360084C3A5 /* AMFuelStatisticsView.h */,
+				ACA7A72B1CD27A360084C3A5 /* AMFuelStatisticsView.m */,
+			);
+			name = AMFuelStatisticsView;
+			sourceTree = "<group>";
+		};
+		ACA7A72D1CD29A510084C3A5 /* AMKmStatisticsView */ = {
+			isa = PBXGroup;
+			children = (
+				ACA7A72E1CD29A700084C3A5 /* AMKmStatisticsView.h */,
+				ACA7A72F1CD29A700084C3A5 /* AMKmStatisticsView.m */,
+				ACA7A7311CD29A7D0084C3A5 /* AMKmStatisticsView.xib */,
+			);
+			name = AMKmStatisticsView;
 			sourceTree = "<group>";
 		};
 		ACBCC0B51CBC03EE0047E8F6 = {
@@ -111,6 +365,24 @@
 		ACBCC0DE1CBC04980047E8F6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AC20CB2A1CD39B7100416801 /* MaterialLegendView */,
+				ACA7A72D1CD29A510084C3A5 /* AMKmStatisticsView */,
+				ACA7A7271CD27A010084C3A5 /* AMFuelStatisticsView */,
+				ACD591831CD12C7E001A2270 /* MCPieChartView */,
+				ACD5917F1CD12125001A2270 /* AMStatisticsVC */,
+				AC8885CE1CCFEF2F00CDDB0D /* AMExtremeVC */,
+				AC8885BE1CCFE25600CDDB0D /* AMExtreme */,
+				AC8885B71CCFC88C00CDDB0D /* AMWashInputView */,
+				AC8885B01CCFC76B00CDDB0D /* AMWashInput */,
+				AC8885A91CCFBA5C00CDDB0D /* AMTOInput */,
+				AC8885A31CCFB82400CDDB0D /* AMTOInputView */,
+				ACDECB3E1CCF7DC000941B57 /* AMMaterialInput */,
+				ACDECB381CCF778D00941B57 /* AMMaterialsInputView */,
+				AC9F13D51CCEA703008B696A /* AMUserSettings */,
+				AC9F13C81CCEA15D008B696A /* AMFuelInputModel */,
+				AC9F13C21CCE7D2F008B696A /* AMFuelInputView */,
+				AC9F13BE1CCE7B5E008B696A /* AMInputVC */,
+				AC0A51271CCCEDA000582C02 /* AMManual */,
 				ACDB5B8E1CC15D0100BA706C /* AMSettingsCell */,
 				ACDB5B8A1CC1543C00BA706C /* AMSettingsVC */,
 				ACDB5B891CC151D100BA706C /* AMManualVC */,
@@ -128,11 +400,44 @@
 			name = AMCategoryVC;
 			sourceTree = "<group>";
 		};
+		ACD5917F1CD12125001A2270 /* AMStatisticsVC */ = {
+			isa = PBXGroup;
+			children = (
+				ACD591801CD1213B001A2270 /* AMStatisticsVC.h */,
+				ACD591811CD1213B001A2270 /* AMStatisticsVC.m */,
+				ACD591951CD13A46001A2270 /* TotalCostLegendView.xib */,
+			);
+			name = AMStatisticsVC;
+			sourceTree = "<group>";
+		};
+		ACD591831CD12C7E001A2270 /* MCPieChartView */ = {
+			isa = PBXGroup;
+			children = (
+				ACD591841CD12CAA001A2270 /* MCCore.h */,
+				ACD591851CD12CAA001A2270 /* MCNewCustomLayer.h */,
+				ACD591861CD12CAA001A2270 /* MCNewCustomLayer.m */,
+				ACD591871CD12CAA001A2270 /* MCNewCustomLayeredView.h */,
+				ACD591881CD12CAA001A2270 /* MCNewCustomLayeredView.m */,
+				ACD591891CD12CAA001A2270 /* MCNewCustomLayeredView+MCCustomLayeredViewSubclass.h */,
+				ACD5918A1CD12CAA001A2270 /* MCPieChartView.h */,
+				ACD5918B1CD12CAA001A2270 /* MCPieChartView.m */,
+				ACD5918C1CD12CAA001A2270 /* MCSliceLayer.h */,
+				ACD5918D1CD12CAA001A2270 /* MCSliceLayer.m */,
+				ACD5918E1CD12CAA001A2270 /* MCUtil.h */,
+				ACD5918F1CD12CAA001A2270 /* MCUtil.m */,
+			);
+			name = MCPieChartView;
+			sourceTree = "<group>";
+		};
 		ACDB5B891CC151D100BA706C /* AMManualVC */ = {
 			isa = PBXGroup;
 			children = (
 				ACDB5B861CC151CD00BA706C /* AMManualVC.h */,
 				ACDB5B871CC151CD00BA706C /* AMManualVC.m */,
+				AC733EE01CCD4FF7009465FC /* AMManualView.h */,
+				AC733EE11CCD4FF7009465FC /* AMManualView.m */,
+				AC733EE31CCD5008009465FC /* AMManualView.xib */,
+				AC8885CA1CCFEE6600CDDB0D /* ManualJson.json */,
 			);
 			name = AMManualVC;
 			sourceTree = "<group>";
@@ -154,6 +459,27 @@
 				ACDB5B921CC15D4A00BA706C /* AMSettingsCell.xib */,
 			);
 			name = AMSettingsCell;
+			sourceTree = "<group>";
+		};
+		ACDECB381CCF778D00941B57 /* AMMaterialsInputView */ = {
+			isa = PBXGroup;
+			children = (
+				ACDECB391CCF77A600941B57 /* AMMaterialsInputView.h */,
+				ACDECB3A1CCF77A600941B57 /* AMMaterialsInputView.m */,
+				ACDECB3C1CCF77AE00941B57 /* AMMaterialInputView.xib */,
+			);
+			name = AMMaterialsInputView;
+			sourceTree = "<group>";
+		};
+		ACDECB3E1CCF7DC000941B57 /* AMMaterialInput */ = {
+			isa = PBXGroup;
+			children = (
+				ACDECB3F1CCF7DD100941B57 /* AMMaterialInput+CoreDataProperties.h */,
+				ACDECB401CCF7DD100941B57 /* AMMaterialInput+CoreDataProperties.m */,
+				ACDECB411CCF7DD100941B57 /* AMMaterialInput.h */,
+				ACDECB421CCF7DD100941B57 /* AMMaterialInput.m */,
+			);
+			name = AMMaterialInput;
 			sourceTree = "<group>";
 		};
 		DA8F49D4AFF3249EBB1D7444 /* Frameworks */ = {
@@ -225,9 +551,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACD591961CD13A46001A2270 /* TotalCostLegendView.xib in Resources */,
+				ACA7A7321CD29A7D0084C3A5 /* AMKmStatisticsView.xib in Resources */,
+				ACA7A7291CD27A180084C3A5 /* AMFuelStatisticsView.xib in Resources */,
+				ACDECB3D1CCF77AE00941B57 /* AMMaterialInputView.xib in Resources */,
+				AC733EE41CCD5008009465FC /* AMManualView.xib in Resources */,
 				ACBCC0D11CBC03EE0047E8F6 /* Assets.xcassets in Resources */,
+				AC8885CD1CCFEE7200CDDB0D /* ExtremeJson.json in Resources */,
 				ACDB5B931CC15D4A00BA706C /* AMSettingsCell.xib in Resources */,
+				AC8885CB1CCFEE6600CDDB0D /* ManualJson.json in Resources */,
 				ACBCC0CC1CBC03EE0047E8F6 /* Main.storyboard in Resources */,
+				AC20CB2C1CD39BD500416801 /* AMMaterialLegendView.xib in Resources */,
+				AC8885A81CCFB84E00CDDB0D /* AMTOInputView.xib in Resources */,
+				AC9F13C71CCE7D51008B696A /* AMFuelInputView.xib in Resources */,
+				AC8885BC1CCFC8AD00CDDB0D /* AMWashInputView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,13 +623,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACD591821CD1213B001A2270 /* AMStatisticsVC.m in Sources */,
 				ACDB5B881CC151CD00BA706C /* AMManualVC.m in Sources */,
+				AC8885B61CCFC7D300CDDB0D /* AMWashInput.m in Sources */,
+				ACA7A7301CD29A700084C3A5 /* AMKmStatisticsView.m in Sources */,
+				ACDECB3B1CCF77A600941B57 /* AMMaterialsInputView.m in Sources */,
+				AC9F13D31CCEA18C008B696A /* AMFuelInput+CoreDataProperties.m in Sources */,
+				ACD591931CD12CAA001A2270 /* MCSliceLayer.m in Sources */,
+				AC8885C41CCFE26800CDDB0D /* AMExtreme.m in Sources */,
+				ACD591921CD12CAA001A2270 /* MCPieChartView.m in Sources */,
+				AC8885C31CCFE26800CDDB0D /* AMExtreme+CoreDataProperties.m in Sources */,
 				ACDB5B8D1CC1546300BA706C /* AMSettingsVC.m in Sources */,
 				ACBCC0CF1CBC03EE0047E8F6 /* AutoManager.xcdatamodeld in Sources */,
 				ACBCC0C61CBC03EE0047E8F6 /* AppDelegate.m in Sources */,
+				AC9F13DA1CCEA714008B696A /* AMUserSettings+CoreDataProperties.m in Sources */,
+				ACD591901CD12CAA001A2270 /* MCNewCustomLayer.m in Sources */,
+				AC733EE21CCD4FF7009465FC /* AMManualView.m in Sources */,
 				ACBCC0DD1CBC04940047E8F6 /* AMCategoryVC.m in Sources */,
 				ACDB5B911CC15D3200BA706C /* AMSettingsCell.m in Sources */,
+				AC8885D11CCFEF5800CDDB0D /* AMExtremeVC.m in Sources */,
+				AC9F13DB1CCEA714008B696A /* AMUserSettings.m in Sources */,
+				ACDECB431CCF7DD100941B57 /* AMMaterialInput+CoreDataProperties.m in Sources */,
+				AC9F13D41CCEA18C008B696A /* AMFuelInput.m in Sources */,
+				AC8885B51CCFC7D300CDDB0D /* AMWashInput+CoreDataProperties.m in Sources */,
+				AC8885AE1CCFBA8400CDDB0D /* AMTOInput+CoreDataProperties.m in Sources */,
 				ACBCC0C31CBC03EE0047E8F6 /* main.m in Sources */,
+				AC0A51251CCCED9B00582C02 /* AMManual+CoreDataProperties.m in Sources */,
+				AC9F13C51CCE7D44008B696A /* AMFuelInputView.m in Sources */,
+				ACD591911CD12CAA001A2270 /* MCNewCustomLayeredView.m in Sources */,
+				AC8885BA1CCFC89F00CDDB0D /* AMWashInputView.m in Sources */,
+				AC0A51261CCCED9B00582C02 /* AMManual.m in Sources */,
+				ACD591941CD12CAA001A2270 /* MCUtil.m in Sources */,
+				ACDECB441CCF7DD100941B57 /* AMMaterialInput.m in Sources */,
+				AC8885AF1CCFBA8400CDDB0D /* AMTOInput.m in Sources */,
+				AC8885A61CCFB84300CDDB0D /* AMTOInputView.m in Sources */,
+				ACA7A72C1CD27A360084C3A5 /* AMFuelStatisticsView.m in Sources */,
+				AC9F13C11CCE7B7A008B696A /* AMInputVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

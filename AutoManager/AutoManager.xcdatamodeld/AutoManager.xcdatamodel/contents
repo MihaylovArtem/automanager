@@ -1,4 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Automatic">
+    <entity name="AMExtreme" representedClassName="AMExtreme" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="from" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="AMFuelInput" representedClassName="AMFuelInput" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="fuelCost" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fuelType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fuelVolume" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="km" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="AMManual" representedClassName="AMManual" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="from" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="AMMaterialInput" representedClassName="AMMaterialInput" syncable="YES">
+        <attribute name="cost" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="km" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="AMTOInput" representedClassName="AMTOInput" syncable="YES">
+        <attribute name="cost" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="km" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="AMUserSettings" representedClassName="AMUserSettings" syncable="YES">
+        <attribute name="carDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="docDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="mark" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="AMWashInput" representedClassName="AMWashInput" syncable="YES">
+        <attribute name="cost" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="km" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AMFuelInput" positionX="-63" positionY="9" width="128" height="120"/>
+        <element name="AMManual" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="AMMaterialInput" positionX="-54" positionY="36" width="128" height="105"/>
+        <element name="AMUserSettings" positionX="-54" positionY="36" width="128" height="105"/>
+        <element name="AMTOInput" positionX="-54" positionY="36" width="128" height="90"/>
+        <element name="AMWashInput" positionX="-45" positionY="45" width="128" height="90"/>
+        <element name="AMExtreme" positionX="-27" positionY="63" width="128" height="105"/>
+    </elements>
 </model>

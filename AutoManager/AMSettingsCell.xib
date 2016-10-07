@@ -16,19 +16,33 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tcD-ZV-QX9">
-                        <rect key="frame" x="8" y="8" width="412" height="33"/>
+                        <rect key="frame" x="141" y="8" width="279" height="33"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxO-uM-Tv6">
+                        <rect key="frame" x="8" y="8" width="125" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="125" id="Ojj-wQ-EEy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="tcD-ZV-QX9" firstAttribute="trailing" secondItem="6VU-Rm-B3N" secondAttribute="trailingMargin" id="3Yq-c4-NV9"/>
+                    <constraint firstItem="uxO-uM-Tv6" firstAttribute="leading" secondItem="6VU-Rm-B3N" secondAttribute="leadingMargin" id="9DV-T6-sfn"/>
+                    <constraint firstItem="uxO-uM-Tv6" firstAttribute="top" secondItem="6VU-Rm-B3N" secondAttribute="topMargin" id="GGb-XS-a8c"/>
+                    <constraint firstItem="uxO-uM-Tv6" firstAttribute="bottom" secondItem="6VU-Rm-B3N" secondAttribute="bottomMargin" id="KvS-0t-n6y"/>
                     <constraint firstItem="tcD-ZV-QX9" firstAttribute="top" secondItem="6VU-Rm-B3N" secondAttribute="topMargin" id="QGe-rW-Y3R"/>
+                    <constraint firstItem="tcD-ZV-QX9" firstAttribute="leading" secondItem="uxO-uM-Tv6" secondAttribute="trailing" constant="8" id="UDc-aA-V9z"/>
                     <constraint firstAttribute="bottomMargin" secondItem="tcD-ZV-QX9" secondAttribute="bottom" id="qHk-Mj-hgR"/>
-                    <constraint firstItem="tcD-ZV-QX9" firstAttribute="leading" secondItem="6VU-Rm-B3N" secondAttribute="leadingMargin" id="x6V-fF-FWe"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="desc" destination="uxO-uM-Tv6" id="UqX-Sm-j06"/>
+                <outlet property="descWidth" destination="Ojj-wQ-EEy" id="ahI-Tg-JLP"/>
                 <outlet property="name" destination="tcD-ZV-QX9" id="F7o-lq-R69"/>
             </connections>
             <point key="canvasLocation" x="410" y="269"/>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AMKmStatisticsView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTD-eF-tIT">
+                    <rect key="frame" x="293" y="34" width="50" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="8eB-9i-oc2"/>
+                        <constraint firstAttribute="height" constant="39" id="h2o-Zx-ziy"/>
+                    </constraints>
+                    <state key="normal" image="alertclose"/>
+                    <connections>
+                        <action selector="closeTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="w1R-Uj-VFY"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Статистика пробега автомобиля" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HG6-dP-0nW">
+                    <rect key="frame" x="48" y="88" width="279" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Общий пробег автомобиля" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gm5-H9-ZzG">
+                    <rect key="frame" x="8" y="133" width="218" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Средний пробег автомобиля за месяц" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdV-7c-VWC">
+                    <rect key="frame" x="8" y="266" width="309" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Средний пробег автомобиля за день" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CN3-7x-Ttp">
+                    <rect key="frame" x="8" y="422" width="297" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Cm-Gv-rxe">
+                    <rect key="frame" x="234" y="171" width="45" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHC-OD-Bnd">
+                    <rect key="frame" x="234" y="316" width="45" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Kf-Z7-6vm">
+                    <rect key="frame" x="234" y="475" width="45" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="CN3-7x-Ttp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="13T-R5-QZM"/>
+                <constraint firstItem="fdV-7c-VWC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="5HP-Y2-4Oq"/>
+                <constraint firstItem="CHC-OD-Bnd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="234" id="5Ro-Gx-1gf"/>
+                <constraint firstItem="CN3-7x-Ttp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="422" id="EDu-IM-rOk"/>
+                <constraint firstAttribute="trailing" secondItem="FTD-eF-tIT" secondAttribute="trailing" constant="32" id="Iui-yY-t8K"/>
+                <constraint firstItem="HG6-dP-0nW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="88" id="Kzx-7y-g9j"/>
+                <constraint firstItem="FTD-eF-tIT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="34" id="NKy-fR-KJM"/>
+                <constraint firstItem="fdV-7c-VWC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="266" id="Xtz-3V-eWy"/>
+                <constraint firstItem="gm5-H9-ZzG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="133" id="aR9-7G-bMk"/>
+                <constraint firstItem="CHC-OD-Bnd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="316" id="mOk-tP-BOr"/>
+                <constraint firstItem="5Kf-Z7-6vm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="234" id="o0I-0V-3f1"/>
+                <constraint firstItem="5Cm-Gv-rxe" firstAttribute="top" secondItem="gm5-H9-ZzG" secondAttribute="bottom" constant="17" id="rL1-fi-Dt4"/>
+                <constraint firstItem="gm5-H9-ZzG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="ubU-43-hw5"/>
+                <constraint firstItem="HG6-dP-0nW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="urf-HT-Bx6"/>
+                <constraint firstItem="5Kf-Z7-6vm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="475" id="yIC-4F-7im"/>
+                <constraint firstItem="5Cm-Gv-rxe" firstAttribute="leading" secondItem="gm5-H9-ZzG" secondAttribute="trailing" constant="8" id="ysE-nq-lub"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outlet property="KmPerDay" destination="5Kf-Z7-6vm" id="9Yj-aZ-XFY"/>
+                <outlet property="KmPerMonth" destination="CHC-OD-Bnd" id="UCv-Xj-9iV"/>
+                <outlet property="overallKm" destination="5Cm-Gv-rxe" id="8Cs-MA-Maf"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="alertclose" width="23" height="23"/>
+    </resources>
+</document>

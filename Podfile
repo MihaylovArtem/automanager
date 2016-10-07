@@ -6,6 +6,7 @@
 target 'AutoManager' do
 
 pod ‘MagicalRecord’
+pod 'JBChartView'
 
 end
 

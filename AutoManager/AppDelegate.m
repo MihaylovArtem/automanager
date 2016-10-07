@@ -1,4 +1,3 @@
-//
 //  AppDelegate.m
 //  AutoManager
 //
@@ -7,6 +6,8 @@
 //
 
 #import "AppDelegate.h"
+#import <CoreData/CoreData.h>
+#import <MagicalRecord/MagicalRecord.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,37 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [MagicalRecord setupCoreDataStackWithStoreNamed:@"AutoManager"];
+    
+    if ([[[UIDevice currentDevice] systemVersion] floatValue]>=8.0) {
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIRemoteNotificationTypeBadge
+                                                                                             |UIRemoteNotificationTypeSound
+                                                                                             |UIRemoteNotificationTypeAlert
+                                                                                             |UIUserNotificationTypeAlert
+                                                                                             |UIUserNotificationTypeBadge) categories:nil];
+        [application registerUserNotificationSettings:settings];
+        [application registerForRemoteNotifications];
+        
+    } else {
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
+         (UIRemoteNotificationTypeAlert |
+          UIRemoteNotificationTypeBadge |
+          UIRemoteNotificationTypeSound |
+          UIRemoteNotificationTypeNewsstandContentAvailability)];
+    }
+    
+//        @try {
+//            NSLog(@"Trying setup database!");
+//            [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"AutoManager.sqlite"];
+//        }
+//        
+//        @catch (NSException * e) {
+//            NSLog(@"Exception on database init");
+//            [MagicalRecord cleanUp];
+//            [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"AutoManager.sqlite"];
+//        }
+    
     return YES;
 }
 
@@ -28,6 +60,8 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [[NSUserDefaults standardUserDefaults] setValue:[NSDate date] forKey:@"ApplcationMinimizedTimeUserDefaults"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {

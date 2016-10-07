@@ -1,12 +1,15 @@
 PODS:
+  - JBChartView (3.0.8)
   - MagicalRecord (2.3.2):
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
 
 DEPENDENCIES:
+  - JBChartView
   - MagicalRecord
 
 SPEC CHECKSUMS:
+  JBChartView: 47aa5c25d3231fe1b08b714ac470eba886558951
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
 
 COCOAPODS: 0.39.0
